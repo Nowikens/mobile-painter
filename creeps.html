@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML5 Canvas</title>
+  <title>Mobile painter</title>
 </head>
 <body>
-<canvas id="draw" width="800" height="800"></canvas>
+<canvas id="draw"></canvas>
 <script>
 const canvas = document.querySelector('#draw');
 const ctx = canvas.getContext('2d');
@@ -16,7 +16,10 @@ canvas.height = innerHeight;
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 100;
-ctx.globalCompositeOperation = 'difference'
+options = ['add', 'xor', 'difference', 'hue']
+ctx.globalCompositeOperation = options[Math.floor(Math.random() * options.length)];
+
+
 
 let isDrawing = false;
 let lastX = 0;
