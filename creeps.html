@@ -25,7 +25,7 @@ let hue = 0;
 let direction = true;
 
 function draw(e){
-	console.log(e.touches[0].clientX)
+	e.preventDefault()
 	if (!isDrawing) return;
 	ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
 	ctx.beginPath();
