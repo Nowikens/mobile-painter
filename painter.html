@@ -15,7 +15,7 @@ canvas.width = innerWidth;
 canvas.height = innerHeight;
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.lineWidth = 100;
+ctx.lineWidth = 201;
 options = ['add', 'xor', 'difference', 'hue']
 ctx.globalCompositeOperation = options[Math.floor(Math.random() * options.length)];
 
@@ -39,7 +39,7 @@ function draw(e){
 	[lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
 	
 	hue++;
-	if (hue > 360) hue = 0;
+
 	
 	if (ctx.lineWidth >= 500 || ctx.lineWidth <= 200){
 		direction = !direction;
