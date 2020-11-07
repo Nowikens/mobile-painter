@@ -6,5 +6,4 @@ WORKS ONLY ON MOBILE
 
 App made so that certain rude person can entertain herself for a while during train travel.
 
-html preview
-[HERE](https://htmlpreview.github.io/?https://github.com/Nowikens/mobile-painter/blob/main/creeps.html) v3
+html preview****[HERE](https://htmlpreview.github.io/?https://github.com/Nowikens/mobile-painter/blob/main/painter.html)****
