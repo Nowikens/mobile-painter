@@ -33,7 +33,7 @@ function draw(e){
 	ctx.moveTo(lastX, lastY);
 	ctx.lineTo(e.touches[0].clientX, e.touches[0].clientY);
 	ctx.stroke();
-	[lastX, lastY] = [e.offsetX, e.offsetY];
+	[lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
 	
 }
 canvas.addEventListener('touchstart', (e) => {
