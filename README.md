@@ -1,4 +1,6 @@
-# creepynator
+# Mobile painter
+
+App made so that certain rude person can entertain herself for a while during train travel.
 
 html preview
 
